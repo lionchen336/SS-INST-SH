@@ -1,0 +1,25 @@
+payload:
+# > Synology-CN
+# ========== 群晖中国区官网 ==========
+# 1. Core Services (QuickConnect, DDNS, WebAPI)
+  - DOMAIN-SUFFIX,synology.com
+  - DOMAIN-SUFFIX,synology.cn
+  - DOMAIN-SUFFIX,synology.com.cn
+  - DOMAIN-KEYWORD,synology
+  - DOMAIN-SUFFIX,diskstation.com
+  - DOMAIN-SUFFIX,diskstation.cn
+  - DOMAIN-SUFFIX,dsm.cn
+  - DOMAIN-KEYWORD,diskstation
+
+# ========== 群晖中国 QuickConnect/DDNS 服务 ==========
+  - DOMAIN-SUFFIX,quickconnect.cn
+  - DOMAIN-SUFFIX,quickconnect.com.cn
+  - DOMAIN-SUFFIX,quickconnect.to
+  - DOMAIN-SUFFIX,synology.me
+  - DOMAIN-SUFFIX,myds.cn
+  - DOMAIN-SUFFIX,myds.com.cn
+
+# ========== 群晖中国 DDNS 解析服务 ==========
+  - DOMAIN-KEYWORD,synologyddns
+  - DOMAIN-KEYWORD,quickconnect
+  
