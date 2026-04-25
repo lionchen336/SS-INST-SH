@@ -22,4 +22,8 @@ payload:
 # ========== 群晖中国 DDNS 解析服务 ==========
   - DOMAIN-KEYWORD,synologyddns
   - DOMAIN-KEYWORD,quickconnect
+
+# ========== 隧道虚拟网 ==========
+  - DOMAIN-KEYWORD,tailscale
+
   
