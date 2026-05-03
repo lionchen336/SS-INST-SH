@@ -17,3 +17,10 @@ payload:
   # > Apkmirror
   - DOMAIN-SUFFIX,apkmirror.com
   - DOMAIN-KEYWORD,apkmirror
+  # > Gemini
+  - DOMAIN-KEYWORD,google
+  - DOMAIN-KEYWORD,deepmind
+  - DOMAIN-KEYWORD,gstatic
+  - DOMAIN-KEYWORD,doubleclick
+  - DOMAIN,yt3.ggpht.com
+  - DOMAIN,i.ytimg.com
