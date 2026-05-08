@@ -26,4 +26,5 @@ payload:
 # ========== 隧道虚拟网 ==========
   - DOMAIN-KEYWORD,tailscale
 
-  
+# > Tencent
+  - IP-CIDR,182.254.116.0/24,no-resolve
