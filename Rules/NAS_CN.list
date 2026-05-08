@@ -23,9 +23,12 @@ DOMAIN-SUFFIX,myds.com.cn
 # ========== 群晖中国 DDNS 解析服务 ==========
 DOMAIN-KEYWORD,synologyddns
 DOMAIN-KEYWORD,quickconnect
+DOMAIN-SUFFIX,ipify.org
+DOMAIN-SUFFIX,dyndns.org
 
 # ========== 隧道虚拟网 ==========
 DOMAIN-KEYWORD,tailscale
+DOMAIN-SUFFIX,ds.net
 
 # > Tencent
 IP-CIDR,182.254.116.0/24,no-resolve
