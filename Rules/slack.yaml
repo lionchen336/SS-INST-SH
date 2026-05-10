@@ -24,6 +24,24 @@ payload:
   - DOMAIN-KEYWORD,doubleclick
   - DOMAIN,yt3.ggpht.com
   - DOMAIN,i.ytimg.com
+ 
+  # > Crypto 
+  # Bybit 官方域名
+  - DOMAIN-SUFFIX,bybit.com
+  - DOMAIN-SUFFIX,bytick.com
+  - DOMAIN-SUFFIX,bybit.net
+  - DOMAIN-SUFFIX,bybit-global.com
+  - DOMAIN-SUFFIX,bybit-exchange.com
+  - DOMAIN-SUFFIX,bycsi.com
+  
+  # Bybit 静态资源与子域名
+  - DOMAIN,api.bybit.com
+  - DOMAIN,stream.bybit.com
+  - DOMAIN,assets.bybit.com
+  
+  # 关键字兜底
+  - DOMAIN-KEYWORD,bybit
+  - DOMAIN-KEYWORD,bytick
   
   # > Apple Push
   - DOMAIN-SUFFIX,push.apple.com
