@@ -2,57 +2,32 @@
   "version": 1,
   "rules": [
     {
-      "domain": [
-        "yt3.ggpht.com",
-        "i.ytimg.com",
-        "api.bybit.com",
-        "stream.bybit.com",
-        "assets.bybit.com"
-      ],
       "domain_suffix": [
-        "slack-core.com",
-        "slack-edge.com",
-        "slack-files.com",
-        "slack-imgs.com",
-        "slack-msgs.com",
-        "slack-redir.net",
-        "slack.com",
-        "slackb.com",
-        "slackcertified.com",
-        "slackdemo.com",
-        "slackhq.com",
-        "truthsocial.com",
-        "1a-1791.com",
-        "apkmirror.com",
-        "bybit.com",
-        "bytick.com",
-        "bybit.net",
-        "bybit-global.com",
-        "bybit-exchange.com",
-        "bycsi.com",
-        "push.apple.com",
-        "push-apple.com.akadns.net"
+        "synology.com",
+        "synology.cn",
+        "synology.com.cn",
+        "diskstation.com",
+        "diskstation.cn",
+        "dsm.cn",
+        "quickconnect.cn",
+        "quickconnect.com.cn",
+        "quickconnect.to",
+        "synology.me",
+        "myds.cn",
+        "myds.com.cn",
+        "ipify.org",
+        "dyndns.org",
+        "ds.net"
       ],
       "domain_keyword": [
-        "apkmirror",
-        "google",
-        "deepmind",
-        "gstatic",
-        "doubleclick",
-        "bybit",
-        "bytick",
-        "apple.com.edgekey.net"
+        "synology",
+        "diskstation",
+        "synologyddns",
+        "quickconnect",
+        "tailscale"
       ],
       "ip_cidr": [
-        "17.249.0.0/16",
-        "17.252.0.0/16",
-        "17.57.144.0/22",
-        "17.188.128.0/18",
-        "17.188.20.0/23",
-        "2620:149:a44::/48",
-        "2403:300:a42::/48",
-        "2403:300:a51::/48",
-        "2a01:b740:a42::/48"
+        "182.254.116.0/24"
       ]
     }
   ]
