@@ -15,7 +15,6 @@ payload:
   # > Truth Social
   - DOMAIN-SUFFIX,truthsocial.com
   - DOMAIN-SUFFIX,1a-1791.com
-
   # > Apkmirror
   - DOMAIN-SUFFIX,apkmirror.com
   - DOMAIN-KEYWORD,apkmirror
