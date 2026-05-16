@@ -6,6 +6,14 @@ on:
       - 'custom.yaml' # 只有当你修改 custom.yaml 时才会触发在线编译
   workflow_dispatch: # 允许你在网页上点击按钮手动触发
 
+# 修复 1：明确赋予工作流对仓库的写入权限，解决 exit code 128
+permissions:
+  contents: write
+
+# 修复 2：解决 Node.js 20 弃用警告，提前强制工作流在 Node.js 24 下运行
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -41,5 +49,11 @@ jobs:
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git add custom.json custom.srs
-          git commit -m "chore: 自动更新编译规则集 [skip ci]" || echo "无文件变更"
-          git push
+          
+          # 优化 Git 检查逻辑，防止无变更时强行 commit 报错
+          if git diff --staged --quiet; then
+            echo "没有检测到规则文件发生变化，跳过提交。"
+          else
+            git commit -m "chore: 自动更新编译规则集 [skip ci]"
+            git push
+          fi
