@@ -1,0 +1,45 @@
+name: 自动编译 Sing-box 规则集
+
+on:
+  push:
+    paths:
+      - 'custom.yaml' # 只有当你修改 custom.yaml 时才会触发在线编译
+  workflow_dispatch: # 允许你在网页上点击按钮手动触发
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 签出代码
+        uses: actions/checkout@v4
+
+      - name: 设置 Python 环境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: 安装 Python 依赖
+        run: pip install pyyaml
+
+      - name: 执行转换脚本 (YAML 转 JSON)
+        run: python convert.py
+
+      - name: 下载并安装最新版 Sing-box 内核
+        run: |
+          VERSION=$(curl -s https://api.github.com/repos/SagerNet/sing-box/releases/latest | grep tag_name | cut -d '"' -f 4 | sed 's/v//')
+          wget https://github.com/SagerNet/sing-box/releases/download/v${VERSION}/sing-box-${VERSION}-linux-amd64.tar.gz
+          tar -xvf sing-box-${VERSION}-linux-amd64.tar.gz
+          mv sing-box-${VERSION}-linux-amd64/sing-box ./sing-box
+
+      - name: 编译为二进制 SRS 格式
+        run: |
+          ./sing-box rule-set compile custom.json -o custom.srs
+          echo "编译完成，生成 custom.srs"
+
+      - name: 将生成的自动提交回仓库
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add custom.json custom.srs
+          git commit -m "chore: 自动更新编译规则集 [skip ci]" || echo "无文件变更"
+          git push
