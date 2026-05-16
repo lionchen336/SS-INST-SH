@@ -1,0 +1,61 @@
+payload:
+  # > Slack API
+  - DOMAIN-SUFFIX,slack-core.com
+  - DOMAIN-SUFFIX,slack-edge.com
+  - DOMAIN-SUFFIX,slack-files.com
+  - DOMAIN-SUFFIX,slack-imgs.com
+  - DOMAIN-SUFFIX,slack-msgs.com
+  - DOMAIN-SUFFIX,slack-redir.net
+  - DOMAIN-SUFFIX,slack.com
+  - DOMAIN-SUFFIX,slackb.com
+  - DOMAIN-SUFFIX,slackcertified.com
+  - DOMAIN-SUFFIX,slackdemo.com
+  - DOMAIN-SUFFIX,slackhq.com
+  # > Truth Social
+  - DOMAIN-SUFFIX,truthsocial.com
+  - DOMAIN-SUFFIX,1a-1791.com
+  # > Apkmirror
+  - DOMAIN-SUFFIX,apkmirror.com
+  - DOMAIN-KEYWORD,apkmirror
+  # > Gemini
+  - DOMAIN-KEYWORD,google
+  - DOMAIN-KEYWORD,deepmind
+  - DOMAIN-KEYWORD,gstatic
+  - DOMAIN-KEYWORD,doubleclick
+  - DOMAIN,yt3.ggpht.com
+  - DOMAIN,i.ytimg.com
+ 
+  # > Crypto 
+  # Bybit 官方域名
+  - DOMAIN-SUFFIX,bybit.com
+  - DOMAIN-SUFFIX,bytick.com
+  - DOMAIN-SUFFIX,bybit.net
+  - DOMAIN-SUFFIX,bybit-global.com
+  - DOMAIN-SUFFIX,bybit-exchange.com
+  - DOMAIN-SUFFIX,bycsi.com
+  
+  # Bybit 静态资源与子域名
+  - DOMAIN,api.bybit.com
+  - DOMAIN,stream.bybit.com
+  - DOMAIN,assets.bybit.com
+  
+  # 关键字兜底
+  - DOMAIN-KEYWORD,bybit
+  - DOMAIN-KEYWORD,bytick
+  
+  # > Apple Push
+  - DOMAIN-SUFFIX,push.apple.com
+  - DOMAIN-SUFFIX,push-apple.com.akadns.net
+  - DOMAIN-KEYWORD,apple.com.edgekey.net
+
+  # IP Source: https://support.apple.com/en-us/102266
+  - IP-CIDR,17.249.0.0/16,no-resolve
+  - IP-CIDR,17.252.0.0/16,no-resolve
+  - IP-CIDR,17.57.144.0/22,no-resolve
+  - IP-CIDR,17.188.128.0/18,no-resolve
+  - IP-CIDR,17.188.20.0/23,no-resolve
+
+  - IP-CIDR6,2620:149:a44::/48,no-resolve
+  - IP-CIDR6,2403:300:a42::/48,no-resolve
+  - IP-CIDR6,2403:300:a51::/48,no-resolve
+  - IP-CIDR6,2a01:b740:a42::/48,no-resolve
