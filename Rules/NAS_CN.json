@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "synology.com",
+        "synology.cn",
+        "synology.com.cn",
+        "diskstation.com",
+        "diskstation.cn",
+        "dsm.cn",
+        "quickconnect.cn",
+        "quickconnect.com.cn",
+        "quickconnect.to",
+        "synology.me",
+        "myds.cn",
+        "myds.com.cn",
+        "ipify.org",
+        "dyndns.org",
+        "ds.net"
+      ],
+      "domain_keyword": [
+        "synology",
+        "diskstation",
+        "synologyddns",
+        "quickconnect",
+        "tailscale"
+      ],
+      "ip_cidr": [
+        "182.254.116.0/24"
+      ]
+    }
+  ]
+}
