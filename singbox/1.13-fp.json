@@ -34,7 +34,6 @@
 
     "rules": [
       {
-//        "domain": ["googleapis.com"],
         "domain_suffix": [
           ".googleapis.com",
           ".googleapis.cn",
