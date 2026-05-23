@@ -82,7 +82,7 @@
     { "tag": "✳️ AI节点", "type": "selector", "outbounds": [ {{ "AI" | NotesName}} ]  },
     { "tag": "♻️ AI自动", "type": "urltest", "outbounds": [ {{ "AI" | NotesName}} ], "url": "http://www.gstatic.com/generate_204", "interval": "10m", "tolerance": 50 },
     { "tag": "🐸 财新网", "type": "selector", "outbounds": ["✳️ 付费订阅", "🎯 全球直连"] },
-    { "tag": "✳️ 付费订阅", "type": "selector", "outbounds": [ {{ "caix|c66s" | NotesName}} ]  },
+    { "tag": "✳️ 付费订阅", "type": "selector", "outbounds": [ {{ "caixin|c66s" | NotesName}} ]  },
     { "tag": "🇭🇰 港新节点", "type": "selector", "outbounds": [ {{ "香港|新加坡" | NotesName}} ]  },
     { "tag": "🇯🇵 日韩节点", "type": "selector", "outbounds": [ {{ "日本|韩国"| NotesName }} ] },
     { "tag": "🇺🇲 美国节点", "type": "selector", "outbounds": [ {{ "美国"| NotesName }} ] },
