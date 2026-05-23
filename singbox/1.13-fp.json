@@ -63,11 +63,6 @@
       {
         "rule_set": "geosite-geolocation-!cn",
         "server": "proxyDns"
-      },
-
-      {
-        "outbound": "any",
-        "server": "defaultDns"
       }
     ],
 
