@@ -34,6 +34,7 @@
 
     "rules": [
       {
+//        "domain": ["googleapis.com"],
         "domain_suffix": [
           ".googleapis.com",
           ".googleapis.cn",
@@ -75,33 +76,35 @@
     { "type": "mixed", "tag": "in", "listen": "::", "listen_port": 2080, "users": [] }
   ],
   "outbounds": [
-    { "tag": "🚀 节点选择", "type": "selector", "outbounds": ["🐸 手动切换", "♻️ 自动选择", "🇯🇵 日本节点", "🇺🇲 美国节点", "♻️ 🇭🇰 港新自动", "♻️ 🇺🇲 日本自动", "♻️ 🇺🇲 美国自动", "🇭🇰 港新节点", "🎯 全球直连","GLOBAL"] },
+    { "tag": "🚀 节点选择", "type": "selector", "outbounds": ["🐸 手动切换", "♻️ 自动选择", "🇯🇵 日韩节点", "🇺🇲 美国节点", "♻️ 🇭🇰 港新自动", "♻️ 🇯🇵 日韩自动", "♻️ 🇺🇲 美国自动", "🇭🇰 港新节点", "🎯 全球直连","GLOBAL"] },
     { "tag": "🐸 手动切换", "type": "selector", "outbounds": [ {{ "" | NotesName }} ] },
-    { "tag": "♻️ 自动选择", "type": "urltest", "outbounds": [ {{ "" | NotesName }} ], "url": "http://www.gstatic.com/generate_204", "interval": "10m", "tolerance": 50 },
+    { "tag": "♻️ 自动选择", "type": "urltest", "outbounds": [ {{ "c66s|香港|日本|新加坡|台湾|韩国|美国" | NotesName }} ], "url": "http://www.gstatic.com/generate_204", "interval": "10m", "tolerance": 50 },
     { "tag": "✳️ AI节点", "type": "selector", "outbounds": [ {{ "AI" | NotesName}} ]  },
     { "tag": "♻️ AI自动", "type": "urltest", "outbounds": [ {{ "AI" | NotesName}} ], "url": "http://www.gstatic.com/generate_204", "interval": "10m", "tolerance": 50 },
+    { "tag": "🐸 财新网", "type": "selector", "outbounds": ["✳️ 付费订阅", "🎯 全球直连"] },
+    { "tag": "✳️ 付费订阅", "type": "selector", "outbounds": [ {{ "caixin" | NotesName}} ]  },
     { "tag": "🇭🇰 港新节点", "type": "selector", "outbounds": [ {{ "香港|新加坡" | NotesName}} ]  },
-    { "tag": "🇯🇵 日本节点", "type": "selector", "outbounds": [ {{ "日本"| NotesName }} ] },
+    { "tag": "🇯🇵 日韩节点", "type": "selector", "outbounds": [ {{ "日本|韩国"| NotesName }} ] },
     { "tag": "🇺🇲 美国节点", "type": "selector", "outbounds": [ {{ "美国"| NotesName }} ] },
     { "tag": "♻️ 🇭🇰 港新自动", "type": "urltest", "outbounds": [ {{ "香港|新加坡"| NotesName }} ], "url": "http://www.gstatic.com/generate_204", "interval": "10m", "tolerance": 50 },
-    { "tag": "♻️ 🇺🇲 日本自动", "type": "urltest", "outbounds": [ {{ "日本"| NotesName }} ], "url": "http://www.gstatic.com/generate_204", "interval": "10m", "tolerance": 50 },
+    { "tag": "♻️ 🇯🇵 日韩自动", "type": "urltest", "outbounds": [ {{ "日本|韩国"| NotesName }} ], "url": "http://www.gstatic.com/generate_204", "interval": "10m", "tolerance": 50 },
     { "tag": "♻️ 🇺🇲 美国自动", "type": "urltest", "outbounds": [ {{ "美国"| NotesName }} ], "url": "http://www.gstatic.com/generate_204", "interval": "10m", "tolerance": 50 },
     { "tag": "GLOBAL", "type": "selector", "outbounds": [ {{ "" | NotesName }} ] },
     { "tag": "🐠 漏网之鱼", "type": "selector", "outbounds": ["🚀 节点选择", "🎯 全球直连"] },
     { "tag": "🎯 全球直连", "type": "direct" },
-    { "tag": "🆚 私有站点", "type": "selector", "outbounds": [ "🚀 节点选择", "🐸 手动切换", "♻️ 自动选择", "♻️ 🇭🇰 港新自动", "♻️ 🇺🇲 日本自动", "♻️ 🇺🇲 美国自动", "🇭🇰 港新节点", "🇯🇵 日本节点", "🇺🇲 美国节点", "✳️ AI节点", "♻️ AI自动", "🎯 全球直连", {{ "" | NotesName }} ] },
-    { "tag": "🕹️ AppleAI", "type": "selector", "outbounds": [ "🚀 节点选择", "🐸 手动切换", "♻️ 自动选择", "♻️ 🇭🇰 港新自动", "♻️ 🇺🇲 日本自动", "♻️ 🇺🇲 美国自动", "🇭🇰 港新节点", "🇯🇵 日本节点", "🇺🇲 美国节点", "✳️ AI节点", "♻️ AI自动", "🎯 全球直连", {{ "" | NotesName }} ] },
-    { "tag": "🛠️ SSH", "type": "selector", "outbounds": ["🚀 节点选择", "🐸 手动切换", "♻️ 自动选择", "♻️ 🇭🇰 港新自动", "♻️ 🇺🇲 日本自动", "♻️ 🇺🇲 美国自动", "🇭🇰 港新节点", "🇯🇵 日本节点", "🇺🇲 美国节点", "✳️ AI节点", "♻️ AI自动", "🎯 全球直连", {{ "" | NotesName }} ] },
-    { "tag": "📹 YouTube", "type": "selector", "outbounds": ["🚀 节点选择", "🐸 手动切换", "♻️ 自动选择", "♻️ 🇭🇰 港新自动", "♻️ 🇺🇲 日本自动", "♻️ 🇺🇲 美国自动", "🇭🇰 港新节点", "🇯🇵 日本节点", "🇺🇲 美国节点", "✳️ AI节点", "♻️ AI自动", "🎯 全球直连", {{ "" | NotesName }} ] },
-    { "tag": "🤖 AIchat", "type": "selector", "outbounds": ["🚀 节点选择", "🐸 手动切换", "♻️ 自动选择", "♻️ 🇭🇰 港新自动", "♻️ 🇺🇲 日本自动", "♻️ 🇺🇲 美国自动", "🇭🇰 港新节点", "🇯🇵 日本节点", "🇺🇲 美国节点", "✳️ AI节点", "♻️ AI自动", "🎯 全球直连", {{ "" | NotesName }} ] },
-    { "tag": "🍀 Google", "type": "selector", "outbounds": ["🚀 节点选择", "🐸 手动切换", "♻️ 自动选择", "♻️ 🇭🇰 港新自动", "♻️ 🇺🇲 日本自动", "♻️ 🇺🇲 美国自动", "🇭🇰 港新节点", "🇯🇵 日本节点", "🇺🇲 美国节点", "✳️ AI节点", "♻️ AI自动", "🎯 全球直连", {{ "" | NotesName }} ] },
-    { "tag": "👨‍💻 Github", "type": "selector", "outbounds": ["🚀 节点选择", "🐸 手动切换", "♻️ 自动选择", "♻️ 🇭🇰 港新自动", "♻️ 🇺🇲 日本自动", "♻️ 🇺🇲 美国自动", "🇭🇰 港新节点", "🇯🇵 日本节点", "🇺🇲 美国节点", "✳️ AI节点", "♻️ AI自动", "🎯 全球直连", {{ "" | NotesName }} ] },
-    { "tag": "🪟 Microsoft", "type": "selector", "outbounds": ["🚀 节点选择", "🐸 手动切换", "♻️ 自动选择", "♻️ 🇭🇰 港新自动", "♻️ 🇺🇲 日本自动", "♻️ 🇺🇲 美国自动", "🇭🇰 港新节点", "🇯🇵 日本节点", "🇺🇲 美国节点", "✳️ AI节点", "♻️ AI自动", "🎯 全球直连", {{ "" | NotesName }} ] },
-    { "tag": "🐬 OneDrive", "type": "selector", "outbounds": ["🚀 节点选择", "🐸 手动切换", "♻️ 自动选择", "♻️ 🇭🇰 港新自动", "♻️ 🇺🇲 日本自动", "♻️ 🇺🇲 美国自动", "🇭🇰 港新节点", "🇯🇵 日本节点", "🇺🇲 美国节点", "✳️ AI节点", "♻️ AI自动", "🎯 全球直连", {{ "" | NotesName }} ] },
-    { "tag": "🎵 TikTok", "type": "selector", "outbounds": ["🚀 节点选择", "🐸 手动切换", "♻️ 自动选择", "♻️ 🇭🇰 港新自动", "♻️ 🇺🇲 日本自动", "♻️ 🇺🇲 美国自动", "🇭🇰 港新节点", "🇯🇵 日本节点", "🇺🇲 美国节点", "✳️ AI节点", "♻️ AI自动", "🎯 全球直连", {{ "" | NotesName }} ] },
-    { "tag": "🎥 Netflix", "type": "selector", "outbounds": ["🚀 节点选择", "🐸 手动切换", "♻️ 自动选择", "♻️ 🇭🇰 港新自动", "♻️ 🇺🇲 日本自动", "♻️ 🇺🇲 美国自动", "🇭🇰 港新节点", "🇯🇵 日本节点", "🇺🇲 美国节点", "✳️ AI节点", "♻️ AI自动", "🎯 全球直连", {{ "" | NotesName }} ] },
-    { "tag": "📲 Telegram", "type": "selector", "outbounds": ["🚀 节点选择", "🐸 手动切换", "♻️ 自动选择", "♻️ 🇭🇰 港新自动", "♻️ 🇺🇲 日本自动", "♻️ 🇺🇲 美国自动", "🇭🇰 港新节点", "🇯🇵 日本节点", "🇺🇲 美国节点", "✳️ AI节点", "♻️ AI自动", "🎯 全球直连", {{ "" | NotesName }} ] },
-    { "tag": "🍏 Apple", "type": "selector", "outbounds": ["🚀 节点选择", "🐸 手动切换", "♻️ 自动选择", "♻️ 🇭🇰 港新自动", "♻️ 🇺🇲 日本自动", "♻️ 🇺🇲 美国自动", "🇭🇰 港新节点", "🇯🇵 日本节点", "🇺🇲 美国节点", "✳️ AI节点", "♻️ AI自动", "🎯 全球直连", {{ "" | NotesName }} ] },
+    { "tag": "🆚 私有站点", "type": "selector", "outbounds": [ "🚀 节点选择", "🐸 手动切换", "♻️ 自动选择", "♻️ 🇭🇰 港新自动", "♻️ 🇯🇵 日韩自动", "♻️ 🇺🇲 美国自动", "🇭🇰 港新节点", "🇯🇵 日韩节点", "🇺🇲 美国节点", "✳️ AI节点", "♻️ AI自动", "🎯 全球直连", {{ "" | NotesName }} ] },
+    { "tag": "🕹️ AppleAI", "type": "selector", "outbounds": [ "🚀 节点选择", "🐸 手动切换", "♻️ 自动选择", "♻️ 🇭🇰 港新自动", "♻️ 🇯🇵 日韩自动", "♻️ 🇺🇲 美国自动", "🇭🇰 港新节点", "🇯🇵 日韩节点", "🇺🇲 美国节点", "✳️ AI节点", "♻️ AI自动", "🎯 全球直连", {{ "" | NotesName }} ] },
+    { "tag": "🛠️ SSH", "type": "selector", "outbounds": ["🚀 节点选择", "🐸 手动切换", "♻️ 自动选择", "♻️ 🇭🇰 港新自动", "♻️ 🇯🇵 日韩自动", "♻️ 🇺🇲 美国自动", "🇭🇰 港新节点", "🇯🇵 日韩节点", "🇺🇲 美国节点", "✳️ AI节点", "♻️ AI自动", "🎯 全球直连", {{ "" | NotesName }} ] },
+    { "tag": "📹 YouTube", "type": "selector", "outbounds": ["🚀 节点选择", "🐸 手动切换", "♻️ 自动选择", "♻️ 🇭🇰 港新自动", "♻️ 🇯🇵 日韩自动", "♻️ 🇺🇲 美国自动", "🇭🇰 港新节点", "🇯🇵 日韩节点", "🇺🇲 美国节点", "✳️ AI节点", "♻️ AI自动", "🎯 全球直连", {{ "" | NotesName }} ] },
+    { "tag": "🤖 AIchat", "type": "selector", "outbounds": ["🚀 节点选择", "🐸 手动切换", "♻️ 自动选择", "♻️ 🇭🇰 港新自动", "♻️ 🇯🇵 日韩自动", "♻️ 🇺🇲 美国自动", "🇭🇰 港新节点", "🇯🇵 日韩节点", "🇺🇲 美国节点", "✳️ AI节点", "♻️ AI自动", "🎯 全球直连", {{ "" | NotesName }} ] },
+    { "tag": "🍀 Google", "type": "selector", "outbounds": ["🚀 节点选择", "🐸 手动切换", "♻️ 自动选择", "♻️ 🇭🇰 港新自动", "♻️ 🇯🇵 日韩自动", "♻️ 🇺🇲 美国自动", "🇭🇰 港新节点", "🇯🇵 日韩节点", "🇺🇲 美国节点", "✳️ AI节点", "♻️ AI自动", "🎯 全球直连", {{ "" | NotesName }} ] },
+    { "tag": "👨‍💻 Github", "type": "selector", "outbounds": ["🚀 节点选择", "🐸 手动切换", "♻️ 自动选择", "♻️ 🇭🇰 港新自动", "♻️ 🇯🇵 日韩自动", "♻️ 🇺🇲 美国自动", "🇭🇰 港新节点", "🇯🇵 日韩节点", "🇺🇲 美国节点", "✳️ AI节点", "♻️ AI自动", "🎯 全球直连", {{ "" | NotesName }} ] },
+    { "tag": "🪟 Microsoft", "type": "selector", "outbounds": ["🚀 节点选择", "🐸 手动切换", "♻️ 自动选择", "♻️ 🇭🇰 港新自动", "♻️ 🇯🇵 日韩自动", "♻️ 🇺🇲 美国自动", "🇭🇰 港新节点", "🇯🇵 日韩节点", "🇺🇲 美国节点", "✳️ AI节点", "♻️ AI自动", "🎯 全球直连", {{ "" | NotesName }} ] },
+    { "tag": "🐬 OneDrive", "type": "selector", "outbounds": ["🚀 节点选择", "🐸 手动切换", "♻️ 自动选择", "♻️ 🇭🇰 港新自动", "♻️ 🇯🇵 日韩自动", "♻️ 🇺🇲 美国自动", "🇭🇰 港新节点", "🇯🇵 日韩节点", "🇺🇲 美国节点", "✳️ AI节点", "♻️ AI自动", "🎯 全球直连", {{ "" | NotesName }} ] },
+    { "tag": "🎵 TikTok", "type": "selector", "outbounds": ["🚀 节点选择", "🐸 手动切换", "♻️ 自动选择", "♻️ 🇭🇰 港新自动", "♻️ 🇯🇵 日韩自动", "♻️ 🇺🇲 美国自动", "🇭🇰 港新节点", "🇯🇵 日韩节点", "🇺🇲 美国节点", "✳️ AI节点", "♻️ AI自动", "🎯 全球直连", {{ "" | NotesName }} ] },
+    { "tag": "🎥 Netflix", "type": "selector", "outbounds": ["🚀 节点选择", "🐸 手动切换", "♻️ 自动选择", "♻️ 🇭🇰 港新自动", "♻️ 🇯🇵 日韩自动", "♻️ 🇺🇲 美国自动", "🇭🇰 港新节点", "🇯🇵 日韩节点", "🇺🇲 美国节点", "✳️ AI节点", "♻️ AI自动", "🎯 全球直连", {{ "" | NotesName }} ] },
+    { "tag": "📲 Telegram", "type": "selector", "outbounds": ["🚀 节点选择", "🐸 手动切换", "♻️ 自动选择", "♻️ 🇭🇰 港新自动", "♻️ 🇯🇵 日韩自动", "♻️ 🇺🇲 美国自动", "🇭🇰 港新节点", "🇯🇵 日韩节点", "🇺🇲 美国节点", "✳️ AI节点", "♻️ AI自动", "🎯 全球直连", {{ "" | NotesName }} ] },
+    { "tag": "🍏 Apple", "type": "selector", "outbounds": ["🚀 节点选择", "🐸 手动切换", "♻️ 自动选择", "♻️ 🇭🇰 港新自动", "♻️ 🇯🇵 日韩自动", "♻️ 🇺🇲 美国自动", "🇭🇰 港新节点", "🇯🇵 日韩节点", "🇺🇲 美国节点", "✳️ AI节点", "♻️ AI自动", "🎯 全球直连", {{ "" | NotesName }} ] },
 
     {{ Nodes }}
   ],
@@ -117,6 +120,22 @@
       { "type": "logical", "mode": "or", "rules": [{ "port": 53 }, { "protocol": "dns" }], "action": "hijack-dns" },
       { "clash_mode": "direct", "outbound": "🎯 全球直连", "action": "route" },
       { "clash_mode": "global", "outbound": "GLOBAL", "action": "route" },
+      {
+        "domain": ["img.caixin.com", "video.caixin.com", "file.caixin.com"],
+        "outbound": "🎯 全球直连"
+      },
+      {
+        "domain": ["caixindata.com", "gateway.caixin.com"],
+        "outbound": "🐸 财新网"
+      },
+      {
+        "domain_suffix": ["caixin.com", "growingio.com"],
+        "outbound": "🐸 财新网"
+      },
+      {
+        "domain_keyword": ["pinggai"],
+        "outbound": "🐸 财新网"
+      },
       { "domain": [".diybeta.com", "diybeta.com"], "outbound": "🆚 私有站点", "action": "route" },
       { "ip_cidr": ["17.248.152.145", "17.248.152.113"], "outbound": "🕹️ AppleAI", "action": "route" },
       { "rule_set": ["geosite-apple-intelligence"], "outbound": "🕹️ AppleAI", "action": "route" },
