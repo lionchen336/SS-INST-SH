@@ -192,13 +192,13 @@
         "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/category-ads-all.srs",
         "download_detour": "🚀 节点选择"
       },
-  //    {
-  //      "tag": "google-fcm",
-  //      "type": "remote",
-  //      "format": "binary",
-  //      "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/google-fcm.srs",
-  //      "download_detour": "🚀 节点选择"
-  //    },
+//      {
+//        "tag": "google-fcm",
+//        "type": "remote",
+//        "format": "binary",
+//        "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/google-fcm.srs",
+//        "download_detour": "🚀 节点选择"
+//      },
       {
         "tag": "google-cn",
         "type": "remote",
@@ -217,7 +217,7 @@
         "tag": "ai",
         "type": "remote",
         "format": "binary",
-        "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/category-ai-chat-intel.srs",
+        "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/category-ai-!cn@!cn.json.srs",
         "download_detour": "🚀 节点选择"
       },
       {
