@@ -90,6 +90,7 @@
     { "tag": "GLOBAL", "type": "selector", "outbounds": [ {{ "" | NotesName }} ] },
     { "tag": "🐠 漏网之鱼", "type": "selector", "outbounds": ["🚀 节点选择", "🎯 全球直连"] },
     { "tag": "🎯 全球直连", "type": "direct" },
+    { "tag": "REJECT", "type": "block"},
     { "tag": "🛑 广告拦截", "type": "selector", "outbounds": ["REJECT", "🎯 全球直连"] },
     { "tag": "📹 YouTube", "type": "selector", "outbounds": ["♻️ 🇭🇰 港新自动", "♻️ 🇯🇵 日韩自动", "♻️ 🇺🇲 美国自动", "🚀 节点选择", "🐸 手动切换", "♻️ 自动选择", "🇭🇰 港新节点", "🇯🇵 日韩节点", "🇺🇲 美国节点", "✳️ AI节点", "♻️ AI自动", "🎯 全球直连", {{ "" | NotesName }} ] },
     { "tag": "🤖 AIchat", "type": "selector", "outbounds": ["♻️ 🇯🇵 日韩自动", "♻️ 🇺🇲 美国自动", "🚀 节点选择", "🐸 手动切换", "♻️ 自动选择", "♻️ 🇭🇰 港新自动", "🇯🇵 日韩节点", "🇺🇲 美国节点", "🇭🇰 港新节点", "✳️ AI节点", "♻️ AI自动", "🎯 全球直连", {{ "" | NotesName }} ] },
