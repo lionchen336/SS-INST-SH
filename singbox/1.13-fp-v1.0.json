@@ -217,7 +217,7 @@
         "tag": "ai",
         "type": "remote",
         "format": "binary",
-        "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/category-ai-chat-intel.srs",
+        "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/category-ai-!cn@!cn.json.srs",
         "download_detour": "🚀 节点选择"
       },
       {
