@@ -231,7 +231,7 @@
         "tag": "crypto",
         "type": "remote",
         "format": "binary",
-        "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/cryptocurrency.srs",
+        "url": "https://github.com/MetaCubeX/meta-rules-dat/raw/sing/geo/geosite/category-cryptocurrency.srs",
         "download_detour": "🚀 节点选择"
       },
       {
