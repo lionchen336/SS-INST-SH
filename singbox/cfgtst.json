@@ -176,7 +176,7 @@
       ]
     },
     {
-      "tag": "🇺🇸 美国节点",
+      "tag": "🇺🇲 美国节点",
       "type": "selector",
       "outbounds": [
         "include: 🇺🇸|美国|US|United States|c66s1|c66s2|c66s3|c66s801",
