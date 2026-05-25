@@ -184,7 +184,7 @@
       ]
     },
     {
-      "tag": "🇭🇰 港新自动",
+      "tag": "♻️ 🇭🇰 港新自动",
       "type": "urltest",
       "outbounds": [
         "include: 🇭🇰|香港|HongKong|🇸🇬|新加坡|狮城|Singapore",
@@ -192,7 +192,7 @@
       ]
     },
     {
-      "tag": "🇯🇵 日韩自动",
+      "tag": "♻️ 🇯🇵 日韩自动",
       "type": "urltest",
       "outbounds": [
         "include: 🇯🇵|日本|🇹🇼|台湾|🇰🇷|韩国|c66s4|c66s5",
@@ -200,7 +200,7 @@
       ]
     },
     {
-      "tag": "🇺🇸 美国自动",
+      "tag": "♻️ 🇺🇲 美国自动",
       "type": "urltest",
       "outbounds": [
         "include: 🇺🇸|美国|US|United States|c66s1|c66s2|c66s3|c66s801",
