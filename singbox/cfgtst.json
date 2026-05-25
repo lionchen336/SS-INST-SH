@@ -131,7 +131,7 @@
       "outbounds": [
         "include: ",
         "exclude: caixin|订阅|重置|当前|到期|剩余|流量|时间",
-        "❌"
+        "🎯 全球直连"
       ]
     },
     {
@@ -139,8 +139,7 @@
       "type": "urltest",
       "outbounds": [
         "include: ",
-        "exclude: caixin",
-        "❌"
+        "exclude: caixin"
       ]
     },
     {
@@ -155,56 +154,49 @@
       "tag": "✳️ 付费订阅",
       "type": "selector",
       "outbounds": [
-        "include: caixin",
-        "❌"
+        "include: caixin"
       ]
     },
     {
       "tag": "🇭🇰 港新节点",
       "type": "selector",
       "outbounds": [
-        "include: 🇭🇰|香港|HongKong|🇸🇬|新加坡|狮城|Singapore",
-        "❌"
+        "include: 🇭🇰|香港|HongKong|🇸🇬|新加坡|狮城|Singapore"
       ]
     },
     {
       "tag": "🇯🇵 日韩节点",
       "type": "selector",
       "outbounds": [
-        "include: 🇯🇵|日本|🇹🇼|台湾|🇰🇷|韩国|c66s4|c66s5",
-        "❌"
+        "include: 🇯🇵|日本|🇹🇼|台湾|🇰🇷|韩国|c66s4|c66s5"
       ]
     },
     {
       "tag": "🇺🇲 美国节点",
       "type": "selector",
       "outbounds": [
-        "include: 🇺🇸|美国|US|United States|c66s1|c66s2|c66s3|c66s801",
-        "❌"
+        "include: 🇺🇸|美国|US|United States|c66s1|c66s2|c66s3|c66s801"
       ]
     },
     {
       "tag": "♻️ 🇭🇰 港新自动",
       "type": "urltest",
       "outbounds": [
-        "include: 🇭🇰|香港|HongKong|🇸🇬|新加坡|狮城|Singapore",
-        "❌"
+        "include: 🇭🇰|香港|HongKong|🇸🇬|新加坡|狮城|Singapore"
       ]
     },
     {
       "tag": "♻️ 🇯🇵 日韩自动",
       "type": "urltest",
       "outbounds": [
-        "include: 🇯🇵|日本|🇹🇼|台湾|🇰🇷|韩国|c66s4|c66s5",
-        "❌"
+        "include: 🇯🇵|日本|🇹🇼|台湾|🇰🇷|韩国|c66s4|c66s5"
       ]
     },
     {
       "tag": "♻️ 🇺🇲 美国自动",
       "type": "urltest",
       "outbounds": [
-        "include: 🇺🇸|美国|US|United States|c66s1|c66s2|c66s3|c66s801",
-        "❌"
+        "include: 🇺🇸|美国|US|United States|c66s1|c66s2|c66s3|c66s801"
       ]
     },
     {
@@ -212,8 +204,7 @@
       "type": "selector",
       "outbounds": [
         "include: ",
-        "exclude: caixin|订阅|重置|当前|到期|剩余|流量|时间",
-        "❌"
+        "exclude: caixin|订阅|重置|当前|到期|剩余|流量|时间"
       ]
     },
     {
@@ -254,8 +245,7 @@
         "🇯🇵 日韩节点",
         "🇺🇲 美国节点",
         "🎯 全球直连",
-        "exclude: caixin|订阅|重置|当前|到期|剩余|流量|时间",
-        "❌"
+        "exclude: caixin|订阅|重置|当前|到期|剩余|流量|时间"
       ]
     },
     {
@@ -272,8 +262,7 @@
         "🇺🇲 美国节点",
         "🇭🇰 港新节点",
         "🎯 全球直连",
-        "exclude: caixin|订阅|重置|当前|到期|剩余|流量|时间",
-        "❌"
+        "exclude: caixin|订阅|重置|当前|到期|剩余|流量|时间"
       ]
     },
     {
@@ -290,8 +279,7 @@
         "🇺🇲 美国节点",
         "🇭🇰 港新节点",
         "🎯 全球直连",
-        "exclude: caixin|订阅|重置|当前|到期|剩余|流量|时间",
-        "❌"
+        "exclude: caixin|订阅|重置|当前|到期|剩余|流量|时间"
       ]
     },
     {
@@ -308,8 +296,7 @@
         "🇺🇲 美国节点",
         "🇭🇰 港新节点",
         "🎯 全球直连",
-        "exclude: caixin|订阅|重置|当前|到期|剩余|流量|时间",
-        "❌"
+        "exclude: caixin|订阅|重置|当前|到期|剩余|流量|时间"
       ]
     },
     {
@@ -326,8 +313,7 @@
         "🇺🇲 美国节点",
         "🇭🇰 港新节点",
         "🎯 全球直连",
-        "exclude: caixin|订阅|重置|当前|到期|剩余|流量|时间",
-        "❌"
+        "exclude: caixin|订阅|重置|当前|到期|剩余|流量|时间"
       ]
     },
     {
@@ -344,8 +330,7 @@
         "🇯🇵 日韩节点",
         "🇺🇲 美国节点",
         "🇭🇰 港新节点",
-        "exclude: caixin|订阅|重置|当前|到期|剩余|流量|时间",
-        "❌"
+        "exclude: caixin|订阅|重置|当前|到期|剩余|流量|时间"
       ]
     },
     {
@@ -362,8 +347,7 @@
         "🇺🇲 美国节点",
         "🇭🇰 港新节点",
         "🎯 全球直连",
-        "exclude: caixin|订阅|重置|当前|到期|剩余|流量|时间",
-        "❌"
+        "exclude: caixin|订阅|重置|当前|到期|剩余|流量|时间"
       ]
     },
     {
@@ -380,8 +364,7 @@
         "🇺🇲 美国节点",
         "🇭🇰 港新节点",
         "🎯 全球直连",
-        "exclude: caixin|订阅|重置|当前|到期|剩余|流量|时间",
-        "❌"
+        "exclude: caixin|订阅|重置|当前|到期|剩余|流量|时间"
       ]
     },
     {
@@ -398,8 +381,7 @@
         "🇺🇲 美国节点",
         "🇭🇰 港新节点",
         "🎯 全球直连",
-        "exclude: caixin|订阅|重置|当前|到期|剩余|流量|时间",
-        "❌"
+        "exclude: caixin|订阅|重置|当前|到期|剩余|流量|时间"
       ]
     },
     {
@@ -416,8 +398,7 @@
         "🇺🇲 美国节点",
         "🇭🇰 港新节点",
         "🎯 全球直连",
-        "exclude: caixin|订阅|重置|当前|到期|剩余|流量|时间",
-        "❌"
+        "exclude: caixin|订阅|重置|当前|到期|剩余|流量|时间"
       ]
     },
     {
@@ -434,8 +415,7 @@
         "🇺🇲 美国节点",
         "🇭🇰 港新节点",
         "🎯 全球直连",
-        "exclude: caixin|订阅|重置|当前|到期|剩余|流量|时间",
-        "❌"
+        "exclude: caixin|订阅|重置|当前|到期|剩余|流量|时间"
       ]
     },
     {
@@ -452,8 +432,7 @@
         "🇯🇵 日韩节点",
         "🇺🇲 美国节点",
         "🇭🇰 港新节点",
-        "exclude: caixin|订阅|重置|当前|到期|剩余|流量|时间",
-        "❌"
+        "exclude: caixin|订阅|重置|当前|到期|剩余|流量|时间"
       ]
     },
    {
@@ -789,7 +768,6 @@
         "format": "binary",
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/google.srs",
         "download_detour": "🎯 全球直连"
-
       }
     ]
   }
