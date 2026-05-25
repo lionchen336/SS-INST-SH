@@ -449,47 +449,6 @@
     }
   ],
 
-
-
-
-  "route": {
-    "auto_detect_interface": true,
-    "default_domain_resolver": "localDns",
-    "final": "🐠 漏网之鱼",
-    "rules": [
-      { "action": "sniff", "sniffer": ["http", "tls", "quic", "dns"], "timeout": "500ms" },
-      { "action": "resolve", "strategy": "prefer_ipv4" },
-      { "type": "logical", "mode": "or", "rules": [{ "port": 53 }, { "protocol": "dns" }], "action": "hijack-dns" },
-      { "clash_mode": "direct", "outbound": "🎯 全球直连", "action": "route" },
-      { "clash_mode": "global", "outbound": "GLOBAL", "action": "route" },
-      
-      // 财新网定制直连与分流
-      { "domain": ["img.caixin.com", "video.caixin.com", "file.caixin.com"], "outbound": "🎯 全球直连" },
-      { "domain": ["caixindata.com", "gateway.caixin.com"], "outbound": "🐸 财新网" },
-      { "domain_suffix": ["caixin.com", "growingio.com"], "outbound": "🐸 财新网" },
-      { "domain_keyword": ["pinggai"], "outbound": "🐸 财新网" },
-      
-      // 核心SRS规则集路由匹配
-      { "rule_set": ["private", "NAS_CN", "steam-cn", "google-cn"], "outbound": "🎯 全球直连" },
-      { "rule_set": ["banad"], "outbound": "🛑 广告拦截" },
-      { "rule_set": ["ai", "geosite-ai-chat", "openai"], "outbound": "🤖 AIchat" },
-      { "rule_set": ["crypto"], "outbound": "🪙 Crypto" },
-      { "rule_set": ["slack"], "outbound": "📢 Slack" },
-      { "rule_set": ["bing", "microsoft", "onedrive"], "outbound": "🪟 Microsoft" },
-      { "rule_set": ["apple", "geosite-apple-intelligence"], "outbound": "🍏 Apple" },
-      { "rule_set": ["telegram"], "outbound": "📲 Telegram" },
-      { "rule_set": ["youtube"], "outbound": "📹 YouTube" },
-      { "rule_set": ["geosite-github"], "outbound": "👨‍💻 Github" },
-      { "rule_set": ["geosite-tiktok"], "outbound": "📢 Slack" },
-      { "rule_set": ["neteasemusic"], "outbound": "🎯 全球直连" },
-      { "rule_set": ["epic", "origin", "sony", "steam", "nintendo"], "outbound": "📹 YouTube" },
-      { "rule_set": ["netflix", "bahamut", "proxymedia"], "outbound": "🎥 Netflix" },
-      { "rule_set": ["bilibilihmt", "bilibili", "chinamedia"], "outbound": "🎯 全球直连" },
-      { "rule_set": ["gfwlist"], "outbound": "🚀 节点选择" },
-      { "rule_set": ["geosite-cn"], "outbound": "🎯 全球直连" },
-      { "rule_set": ["geoip-cn"], "outbound": "🎯 全球直连" }
-    ],
-
   "route": {
     "rules": [
       {
