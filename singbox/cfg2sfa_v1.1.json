@@ -153,8 +153,8 @@
       "tag": "♻️ 自动选择",
       "type": "urltest",
       "outbounds": [
-        "include: ",
-        "exclude: caixin|订阅|重置|当前|到期|剩余|流量|时间"
+        "include: 🇭🇰|香港|HongKong|🇸🇬|新加坡|狮城|Singapore|🇯🇵|日本|🇹🇼|台湾|🇰🇷|韩国|🇺🇸|美国|US|United States|c66s"
+//        "exclude: caixin|订阅|重置|当前|到期|剩余|流量|时间"
       ]
     },
     {
