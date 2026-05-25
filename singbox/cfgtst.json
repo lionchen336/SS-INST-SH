@@ -154,7 +154,7 @@
       "tag": "✳️ 付费订阅",
       "type": "selector",
       "outbounds": [
-        "include: caixin"
+        "include: caixin|c66s"
       ]
     },
     {
