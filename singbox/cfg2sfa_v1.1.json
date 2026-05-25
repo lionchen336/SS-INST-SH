@@ -21,7 +21,8 @@
         "type": "udp",
 //        "server": "124.221.68.73:1053",
         "server": "140.205.1.13",
-        "detour": "🎯 全球直连"
+        "server_port":53
+//        "detour": "🎯 全球直连"
       },
       {
         "tag": "remote",
