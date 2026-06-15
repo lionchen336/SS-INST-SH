@@ -33,6 +33,7 @@ DOMAIN-SUFFIX,futu8.com
 DOMAIN-SUFFIX,futu9.com
 
 # Futu - regional, business, trading, and static assets
+DOMAIN-SUFFIX,futuhongkong.com
 DOMAIN-SUFFIX,futuau.com
 DOMAIN-SUFFIX,futuesop.com
 DOMAIN-SUFFIX,futufin.com
@@ -61,6 +62,7 @@ DOMAIN-SUFFIX,sgqt0j.launches.appsflyersdk.com
 
 # Futu / Moomoo - Tencent IM long connection
 DOMAIN-SUFFIX,shortconn.im.qcloud.com
+DOMAIN-SUFFIX,qtlcdn.com
 
 # Futu / Moomoo - CIDR ranges, mostly trading, quotes, and app backend endpoints
 IP-CIDR,1.14.242.0/23,no-resolve
