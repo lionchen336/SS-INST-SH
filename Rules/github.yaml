@@ -1,0 +1,37 @@
+payload:
+  # GitHub 官方
+  - DOMAIN-SUFFIX,github.com
+  - DOMAIN-SUFFIX,githubusercontent.com
+  - DOMAIN-SUFFIX,githubassets.com
+  - DOMAIN-SUFFIX,githubstatus.com
+  - DOMAIN-SUFFIX,github.blog
+
+  # GitHub API
+  - DOMAIN,api.github.com
+
+  # GitHub Raw
+  - DOMAIN-SUFFIX,raw.githubusercontent.com
+  - DOMAIN-SUFFIX,user-images.githubusercontent.com
+  - DOMAIN-SUFFIX,avatars.githubusercontent.com
+  - DOMAIN-SUFFIX,avatars0.githubusercontent.com
+  - DOMAIN-SUFFIX,avatars1.githubusercontent.com
+  - DOMAIN-SUFFIX,avatars2.githubusercontent.com
+  - DOMAIN-SUFFIX,avatars3.githubusercontent.com
+  - DOMAIN-SUFFIX,avatars4.githubusercontent.com
+
+  # GitHub Release
+  - DOMAIN-SUFFIX,objects.githubusercontent.com
+  - DOMAIN-SUFFIX,objects-origin.githubusercontent.com
+  - DOMAIN-SUFFIX,github-releases.githubusercontent.com
+
+  # GitHub Pages
+  - DOMAIN-SUFFIX,github.io
+
+  # Git LFS
+  - DOMAIN-SUFFIX,githubusercontent.com
+  - DOMAIN-SUFFIX,media.githubusercontent.com
+
+  # jsDelivr
+  - DOMAIN,cdn.jsdelivr.net
+  - DOMAIN,fastly.jsdelivr.net
+  - DOMAIN,testingcf.jsdelivr.net
