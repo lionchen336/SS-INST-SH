@@ -198,3 +198,11 @@ payload:
   - PROCESS-NAME,Tiger Trade
   - PROCESS-NAME,TWS
   - PROCESS-NAME,ibgateway
+
+############################
+# 港区网站
+############################
+
+  - DOMAIN-SUFFIX,hk01.com
+  - DOMAIN-SUFFIX,udn.com
+  
