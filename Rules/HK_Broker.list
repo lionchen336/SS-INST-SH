@@ -192,6 +192,13 @@ DOMAIN-KEYWORD,interactivebrokers
 ############################
 
 PROCESS-NAME,FutuOpenD
+
+############################
+# 港区网站
+############################
+
+DOMAIN-SUFFIX,hk01.com
+DOMAIN-SUFFIX,udn.com
 PROCESS-NAME,moomoo
 PROCESS-NAME,Tiger Trade
 PROCESS-NAME,TWS
