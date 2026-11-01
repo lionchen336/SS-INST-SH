@@ -1,18 +1,18 @@
 # ---- Bybit 国际站 ----
-- DOMAIN-SUFFIX,bybit.com
-- DOMAIN-SUFFIX,bytick.com
+DOMAIN-SUFFIX,bybit.com
+DOMAIN-SUFFIX,bytick.com
 
 # ---- Bybit 区域站点 ----
-- DOMAIN-SUFFIX,bybit.eu
-- DOMAIN-SUFFIX,bybit.tr
-- DOMAIN-SUFFIX,bybit.kz
-- DOMAIN-SUFFIX,bybit.id
-- DOMAIN-SUFFIX,bybit.ae
-- DOMAIN-SUFFIX,bybitgeorgia.ge
+DOMAIN-SUFFIX,bybit.eu
+DOMAIN-SUFFIX,bybit.tr
+DOMAIN-SUFFIX,bybit.kz
+DOMAIN-SUFFIX,bybit.id
+DOMAIN-SUFFIX,bybit.ae
+DOMAIN-SUFFIX,bybitgeorgia.ge
 
 # ---- Bybit 日本及其他区域 API ----
-- DOMAIN-SUFFIX,manepa.jp
-- DOMAIN-SUFFIX,spark-fintech.com
+DOMAIN-SUFFIX,manepa.jp
+DOMAIN-SUFFIX,spark-fintech.com
 
 # ---- Bybit 测试网络（Testnet）----
-- DOMAIN-SUFFIX,bybit-testnet.com
+DOMAIN-SUFFIX,bybit-testnet.com
